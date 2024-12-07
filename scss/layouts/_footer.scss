@@ -1,0 +1,97 @@
+.footer {
+    position: relative;
+    text-align: center;
+    background-image: url(../images/footer-gym-backgraund.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 32px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        text-align: left;
+    }
+
+    &::before {
+        position: absolute;
+        background-image: url("../images/two_dumbbells.png");
+        background-repeat: no-repeat;
+        left: 0;
+        bottom: 0;
+        width: 124px;
+        height: 88px;
+        background-size: 100%;
+        content: "";
+    }
+    
+    &::after {
+        position: absolute;
+        background-image: url("../images/two_weights.png");
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: 0;
+        width: 124px;
+        height: 88px;
+        background-size: 100%;
+        content: "";  
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        gap: 20px;
+        padding-bottom: 60px;
+        
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+            padding-bottom: 0;
+        }
+    }
+    
+    &__nav,
+    &__address {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+        }
+    }
+    
+    &__logo,
+    &__menu,
+    &__address-list,
+    &__address-info {
+        flex-grow: 1;
+    }
+    
+    &__socials {
+        gap: 24px;
+        margin-top: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: 50%;
+        }
+    }
+
+    &__facebook-instagram-icons {
+        fill: var(--color-primary-dark);
+    }
+    
+    &__facebook-instagram-icons:hover {
+        fill: var(--color-brand);
+    }
+    
+    &__address-copuright {
+        color: var(--color-primary-dark);
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+
