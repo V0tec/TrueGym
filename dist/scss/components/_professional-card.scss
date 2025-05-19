@@ -1,0 +1,25 @@
+.professional-card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+
+    &__photo {
+        border-radius: 4px 4px 4px 100px;
+        border-bottom: 100px;
+        object-fit: cover;
+        width: 194px;
+        height: 259px;
+        box-shadow: -10px 10px 0 0 var(--color-primary-dark),
+        -10px 10px 0 2px var(--color-brand);
+        object-position: top;
+    }
+    
+    &__title {
+        margin-bottom: 16px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+}
+
+

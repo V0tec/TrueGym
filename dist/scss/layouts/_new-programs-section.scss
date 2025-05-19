@@ -1,0 +1,54 @@
+.new-programs-section {
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__content {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  &__img-trainer {
+    width: 100%;
+    height: auto;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 480px;
+      max-height: 640px;
+      flex: 0 0 auto;
+      align-self: flex-start;
+    }
+  }
+
+  &__title {
+    margin-bottom: 42px;
+  }
+  
+
+  &__description {
+    span {
+      color: var(--color-brand);
+      font-family: "Black Ops One";
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &--author {
+      text-transform: initial;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    padding: 16px 32px;
+    color: var(--color-brand);
+    background-color: var(--color-primary-dark);
+    border: 2px solid var(--color-brand);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+}
+
+.button:focus {
+    background-color: var(--color-brand);
+    color: var(--color-primary-dark);
+}
+
+.button:disabled {
+    color: gray;
+    background-color: lightgray;
+    border-color: currentColor;
+    cursor: not-allowed;
+}
